@@ -1,5 +1,0 @@
-import{r,j as l}from"./index-BL6fjPC_.js";const m=()=>{const[c,n]=r.useState(["Welcome to the terminal!"]),[o,s]=r.useState("C:> "),i=r.useRef(null),u=e=>{s(e.target.value)},p=e=>{if(e.key==="Enter"){e.preventDefault();const a=o.trim().split(" ")[1].toLowerCase();switch(a){case"help":n(t=>[...t,o,`Available commands:
-- help: Show this help message
-- hello: Greet the user
-- ktkrvc: Greet the Kiti`]);break;case"hello":n(t=>[...t,o,"Hello, User!"]);break;case"ktkrvc":n(t=>[...t,o,"Hello, Kiti!"]);break;default:n(t=>[...t,o,`Command not found: ${a}
-- Type 'help' for a list of available commands`])}s("C:> ")}},h=()=>{var e;(e=i.current)==null||e.focus()};return l.jsxs("div",{style:{overflow:"auto",backgroundColor:"black",color:"white",padding:"10px",fontFamily:"monospace",width:"640px",height:"480px",cursor:"text"},onClick:h,children:[l.jsx("div",{style:{whiteSpace:"pre-wrap"},children:c.map((e,a)=>l.jsx("div",{children:e},a))}),l.jsx("input",{ref:i,type:"text",value:o,onChange:u,onKeyDown:p,style:{backgroundColor:"black",color:"white",border:"none",width:"100%",outline:"none"},autoFocus:!0})]})};export{m as default};
