@@ -1,0 +1,11 @@
+import{R as v,r as i,j as r}from"./index-BWIdxO0H.js";const j=v.forwardRef((C,p)=>{const[h,o]=i.useState(["Welcome to the portfolio terminal!",'Type "help" for a list of available commands']),[t,d]=i.useState("C:\\> "),c=i.useRef(null),f=["file1.txt","file2.txt","document.pdf"],m={"file1.txt":"This is the content of file1.txt. It contains some text.","file2.txt":"This is file2.txt. Here you have some more content.","document.pdf":"PDF content would be shown here, but it is simulated as text."};i.useImperativeHandle(p,()=>({focusInput:()=>{var n;(n=c.current)==null||n.focus()}}));const x=n=>{d(n.target.value)},y=n=>{if(n.key==="Enter"){n.preventDefault();let a="",s="";try{const[k,u,...w]=t.trim().split(" ");switch(a=u.toLowerCase(),s=w.join(" "),a){case"help":o(e=>[...e,t,`Available commands:
+- help: Show this help message
+- hello: Greet the user
+- ktkrvc: Greet the Kiti
+- clear: Clear the terminal
+- type <file>: Display the contents of a file
+- dir: List files in the current directory
+- whatsmyip: Show your public IP address`]);break;case"hello":o(e=>[...e,t,"Hello, User!"]);break;case"ktkrvc":o(e=>[...e,t,"Hello, Kiti!"]);break;case"clear":o([]);break;case"dir":o(e=>[...e,t,`${f.join(`
+`)}`]);break;case"type":if(s&&f.includes(s)){const e=m[s];o(e?l=>[...l,t,e]:l=>[...l,t,`Could not find content for file: ${s}`])}else o(e=>[...e,t,`File not found: ${s}`]);break;case"whatsmyip":fetch("https://api.ipify.org?format=json").then(e=>e.json()).then(e=>{o(l=>[...l,t,`Your public IP address is: ${e.ip}`])}).catch(()=>{o(e=>[...e,t,"Could not retrieve IP address."])});break;default:o(e=>[...e,t,`Command not found: ${a}
+- Type "help" for a list of available commands`])}}catch{o(u=>[...u,t,`Command not found: ${a}
+- Type "help" for a list of available commands`])}finally{d("C:> ")}}},b=()=>{var n;(n=c.current)==null||n.focus()};return r.jsxs("div",{style:{overflow:"auto",backgroundColor:"black",color:"white",padding:"10px",fontFamily:"monospace",width:"640px",height:"480px",cursor:"text"},onClick:b,children:[r.jsx("div",{style:{whiteSpace:"pre-wrap"},children:h.map((n,a)=>r.jsx("div",{children:n},a))}),r.jsx("input",{ref:c,type:"text",value:t,onChange:x,onKeyDown:y,style:{backgroundColor:"black",color:"white",border:"none",width:"100%",outline:"none"},autoFocus:!0})]})});export{j as default};

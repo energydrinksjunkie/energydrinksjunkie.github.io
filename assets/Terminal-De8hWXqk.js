@@ -1,7 +1,0 @@
-import{R as k,r,j as s}from"./index-ByX2S7S6.js";const x=k.forwardRef((v,u)=>{const[p,o]=r.useState(["Welcome to the portfolio terminal!",'Type "help" for a list of available commands']),[a,i]=r.useState("C:\\> "),c=r.useRef(null);r.useImperativeHandle(u,()=>({focusInput:()=>{var e;(e=c.current)==null||e.focus()}}));const h=e=>{i(e.target.value)},d=e=>{var l;if(e.key==="Enter"){e.preventDefault();let n="";try{switch(n=((l=a.trim().split(" ")[1])==null?void 0:l.toLowerCase())||"",n){case"help":o(t=>[...t,a,`Available commands:
-- help: Show this help message
-- hello: Greet the user
-- ktkrvc: Greet the Kiti
-- clear: Clear the terminal`]);break;case"hello":o(t=>[...t,a,"Hello, User!"]);break;case"ktkrvc":o(t=>[...t,a,"Hello, Kiti!"]);break;case"clear":o([]);break;default:o(t=>[...t,a,`Command not found: ${n}
-- Type "help" for a list of available commands`])}}catch{o(f=>[...f,a,`Command not found: ${n}
-- Type "help" for a list of available commands`])}finally{i("C:\\> ")}}},m=()=>{var e;(e=c.current)==null||e.focus()};return s.jsxs("div",{style:{overflow:"auto",backgroundColor:"black",color:"white",padding:"10px",fontFamily:"monospace",width:"640px",height:"480px",cursor:"text"},onClick:m,children:[s.jsx("div",{style:{whiteSpace:"pre-wrap"},children:p.map((e,l)=>s.jsx("div",{children:e},l))}),s.jsx("input",{ref:c,type:"text",value:a,onChange:h,onKeyDown:d,style:{backgroundColor:"black",color:"white",border:"none",width:"100%",outline:"none"},autoFocus:!0})]})});export{x as default};
