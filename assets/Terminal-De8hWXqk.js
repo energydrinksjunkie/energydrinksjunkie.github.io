@@ -1,4 +1,4 @@
-import{R as k,r,j as s}from"./index-CSTv9Hmz.js";const x=k.forwardRef((v,u)=>{const[p,o]=r.useState(["Welcome to the portfolio terminal!",'Type "help" for a list of available commands']),[a,i]=r.useState("C:\\> "),c=r.useRef(null);r.useImperativeHandle(u,()=>({focusInput:()=>{var e;(e=c.current)==null||e.focus()}}));const h=e=>{i(e.target.value)},d=e=>{var l;if(e.key==="Enter"){e.preventDefault();let n="";try{switch(n=((l=a.trim().split(" ")[1])==null?void 0:l.toLowerCase())||"",n){case"help":o(t=>[...t,a,`Available commands:
+import{R as k,r,j as s}from"./index-ByX2S7S6.js";const x=k.forwardRef((v,u)=>{const[p,o]=r.useState(["Welcome to the portfolio terminal!",'Type "help" for a list of available commands']),[a,i]=r.useState("C:\\> "),c=r.useRef(null);r.useImperativeHandle(u,()=>({focusInput:()=>{var e;(e=c.current)==null||e.focus()}}));const h=e=>{i(e.target.value)},d=e=>{var l;if(e.key==="Enter"){e.preventDefault();let n="";try{switch(n=((l=a.trim().split(" ")[1])==null?void 0:l.toLowerCase())||"",n){case"help":o(t=>[...t,a,`Available commands:
 - help: Show this help message
 - hello: Greet the user
 - ktkrvc: Greet the Kiti
